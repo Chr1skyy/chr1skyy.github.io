@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8" />
+  <title>Papier, kamień, nożyce</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <div class="player">
+      <div class="choices">
+        <span id="player">?</span>
+        <span id="versus">X</span>
+        <span id="comp">?</span>
+      </div>
+      <h2><span id="result"></span></h2>
+    </div>
+    <div class="buttons">
+      <button id="✋">Papier</button>
+      <button id="✊">Kamień</button>
+      <button id="✌️">Nożyce</button>
+    </div>
+    <div class="scoreboard">
+      <div class="player">
+        <div class="scoreBox">
+          <span id="playerScore">0</span>
+        </div>
+        <h4>Ty</h4>
+      </div>
+      <div class="player">
+        <div class="scoreBox">
+          <span id="compScore">0</span>
+        </div>
+        <h4>Komputer</h4>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

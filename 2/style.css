@@ -1,0 +1,105 @@
+body {
+  align-items: center;
+  background: #1cb125;
+  display: flex;
+  font-family: Sans-Serif;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  height: 603px;
+  margin: 25px;
+  width: 603px;
+}
+
+.square {
+  border: .5px solid #000;
+  height: 200px;
+  width: 200px;
+}
+
+.mole {
+  background: url(./img/mole.png);
+}
+
+.zsz1 {
+  background: url(./img/zsz1.png);
+}
+
+.zsz2 {
+  background: url(./img/zsz2.png);
+}
+
+.zsz3 {
+  background: url(./img/zsz3.png);
+}
+
+.zsz4 {
+  background: url(./img/zsz4.png);
+}
+
+body {
+  cursor: url(./img/cursor.png), auto;
+}
+
+.gameOver {
+  align-items: center;
+  background: #333;
+  box-shadow: rgba(0,0,0,0.5) 0 0 0 9999px;
+  display: none;
+  height: auto;
+  padding: 15px;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  transform: translate(50,-50%);
+}
+
+.gameOverText {
+  color: #ddd;
+  font-family: Sans-Serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.visible {
+  display: flex;
+}
+
+#header {
+  text-align: center;
+}
+
+#score,#timeLeft {
+  background: #1E5287;
+  border: 3px solid #D0F66A;
+  border-radius: 50%;
+  color: #D0F66A;
+  display: block;
+  height: 30px;
+  margin: 10px auto;
+  padding: 15px;
+  width: 30px;
+}
+
+#editionChoice {
+  background: #FFC60B;
+  border: 3px dashed #FF8B00;
+  border-radius: 5px;
+  color: #444;
+  cursor: auto;
+  padding: 15px;
+}
+
+.restart {
+  background: #eee;
+  border: 5px solid #ffa000;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 120%;
+  font-weight: bold;
+  margin: 10px;
+  padding: 15px;
+}

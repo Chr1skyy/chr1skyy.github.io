@@ -1,0 +1,68 @@
+body {
+  background: linear-gradient(to bottom right,#00416A,#799F0C,#FFE000);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-family: Sans-Serif;
+}
+
+button {
+  background: #fff;
+  border: solid 2px #aaa;
+  border-radius: 25px;
+  font-size: 20px;
+  padding: 5px;
+  transition-duration: .3s;
+  width: 100px;
+}
+
+button:hover {
+  background: #5db2ff;
+}
+
+.resStyle {
+  background-color: #333;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  width: 150px;
+  display: block;
+  margin: auto;
+  position: relative;
+}
+
+#player,#comp,#versus {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 25px;
+}
+
+#versus {
+  color: #ddd;
+}
+
+.container {
+  text-align: center;
+  transform: translate(0,30%);
+}
+
+.scoreboard, .choices {
+  padding: 20px;
+}
+
+.player {
+  display: inline-block;
+  padding: 20px
+}
+.scoreBox {
+  background-color: #c31432;
+  border: 3px solid #000;
+  border-radius: 50%;
+  color: #fff200;
+  font-size: 20px;
+  font-weight: bold;
+  height: 30px;
+  padding: 20px;
+  width: 30px;
+}
