@@ -1,19 +1,13 @@
-const wybor = document.getElementById("choice").value;
-const edycje = ["mole",
-  "zsz1",
-  "zsz2",
-  "zsz3",
-  "zsz4"];
 const square = document.querySelectorAll(".square");
 const mole = document.querySelector(".mole");
 const timeLeft = document.querySelector("#timeLeft");
 const score = document.querySelector("#score");
-const hitSound = new Audio("./sound/hit.mp3");
-const missSound = new Audio("./sound/miss.mp3");
-const endGame = new Audio("./sound/endgame.mp3");
 const gameOver = document.querySelector(".gameOver");
 const gameOverText = document.querySelector(".gameOverText");
 const editionChoice = document.getElementById("editionChoice");
+const hitSound = new Audio("./sound/hit.mp3");
+const missSound = new Audio("./sound/miss.mp3");
+const endGame = new Audio("./sound/endgame.mp3");
 const clickSound = new Audio("./sound/click.mp3");
 
 document.onclick = () => {
@@ -21,6 +15,8 @@ document.onclick = () => {
 };
 
 function play() {
+  const wybor = document.getElementById("choice").value;
+  const edycje = ["mole","zsz1","zsz2","zsz3","zsz4"];
   let result = 0,
     currentTime = 60,
     hitPosition,
