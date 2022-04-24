@@ -1,0 +1,19 @@
+html, body {
+  font-family: Monospace;
+}
+
+.snake {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input {
+  margin: 3px;
+  pointer-events: none;
+}
+
+h1 {
+  text-align: center;
+}
