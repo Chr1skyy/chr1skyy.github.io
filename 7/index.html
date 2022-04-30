@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="pl-Pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Generator haseł</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Generator haseł</h1>
+    <textarea class="passwordDisplay" id="passwordDisplay" onclick="copy()"></textarea>
+    <form id="form">
+      <label for="amountNumber">Liczba znaków</label>
+      <div class="amountContainer">
+        <input type="range" min="1" max="50" value="16" id="amountRange" />
+        <input type="number" min="1" max="50" value="16" id="amountNumber" />
+      </div>
+      <label for="includeUpper">Duże litery</label>
+      <input type="checkbox" id="includeUpper" />
+      <label for="includeLower">Małe litery</label>
+      <input type="checkbox" id="includeLower" />
+      <label for="includeNumber">Cyfry</label>
+      <input type="checkbox" id="includeNumber" />
+      <label for="includeSpecial">Znaki specjalne</label>
+      <input type="checkbox" id="includeSpecial" />
+      <label for="excludeSimilar">Wyklucz podobne</label>
+      <div>
+        <input type="checkbox" id="excludeSimilar" />
+        ( i, I, l, 1, L, o, 0, O )
+      </div>
+      <label for="excludeAmbiguous">Wyklucz problematyczne</label>
+      <div>
+        <input type="checkbox" id="excludeAmbiguous" />
+        ( { } [ ] ( ) / \ ' " ` ~ , ; : . < > )
+      </div>
+      <button type="submit">Generuj hasło</button>
+    </form>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>

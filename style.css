@@ -1,24 +1,30 @@
 body {
-  align-items: center;
   background: #222831;
-  display: flex;
   font-family: Sans-Serif;
-  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
-.grid {
-  top: 50%;
-  transform: translateY(50%);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 75px;
 }
 
 .item {
   background: #00ADB5;
   display: table;
-  height: 80px;
-  margin: 20px;
+  height: 70px;
+  margin: 10px;
   width: 180px;
+  transition: 0.3s linear;
+}
+
+.item:hover {
+  background: #006469;
+  transition: 0.3s linear;
 }
 
 a {
@@ -31,16 +37,7 @@ a {
   text-decoration: none;
   vertical-align: middle;
   width: 180px;
-}
-
-.one {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.two {
-  grid-column: 2;
-  grid-row: 1;
+}ow: 1;
 }
 
 .three {

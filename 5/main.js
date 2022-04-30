@@ -85,7 +85,6 @@ for (let c = 0; c < brickColumnCount; c++) {
   }
 }
 
-
 function drawBricks() {
   for (let c = 0; c < brickColumnCount; c++) {
     for (let r = 0; r < brickRowCount; r++) {
@@ -105,17 +104,16 @@ function drawBricks() {
 }
 
 function collisionDetection() {
-  for (var c = 0; c < brickColumnCount; c++) {
-    for (var r = 0; r < brickRowCount; r++) {
-      var b = bricks[c][r];
+  for (let c = 0; c < brickColumnCount; c++) {
+    for (let r = 0; r < brickRowCount; r++) {
+      let b = bricks[c][r];
       if (b.status == 1) {
         if (x > b.x && x < b.x+brickWidth && y > b.y && y < b.y+brickHeight) {
           dy = -dy;
           b.status = 0;
           score++;
           if (score == brickRowCount*brickColumnCount) {
-            alert("YOU WIN, CONGRATS!");
-            document.location.reload();
+            alert("YOU WIN, CONGRATULATIONS!");
           }
         }
       }
@@ -180,5 +178,7 @@ function draw() {
   x += dx;
   y += dy;
   requestAnimationFrame(draw);
+}
+draw();estAnimationFrame(draw);
 }
 draw();
