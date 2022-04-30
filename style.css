@@ -37,25 +37,4 @@ a {
   text-decoration: none;
   vertical-align: middle;
   width: 180px;
-}ow: 1;
-}
-
-.three {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.four {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.five {
-  grid-column: 1;
-  grid-row: 3;
-}
-
-.six {
-  grid-column: 2;
-  grid-row: 3;
 }
