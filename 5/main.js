@@ -179,6 +179,4 @@ function draw() {
   y += dy;
   requestAnimationFrame(draw);
 }
-draw();estAnimationFrame(draw);
-}
 draw();
