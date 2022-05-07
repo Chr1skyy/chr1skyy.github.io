@@ -1,7 +1,7 @@
 body {
   background: #222831;
   font-family: Sans-Serif;
-  height: 100vh;
+  max-height: 100vh;
   box-sizing: border-box;
 }
 

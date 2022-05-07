@@ -5,6 +5,7 @@ const timeEl = document.querySelector('.time');
 const clock = document.querySelector('.clock');
 
 function czas() {
+  console.log(clock);
   clock.style.display = "flex";
 	const d = new Date();
 	let month = d.getMonth();
