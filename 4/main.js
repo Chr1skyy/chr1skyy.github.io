@@ -131,7 +131,7 @@ switch (direction) {
     head[0] = head[0] === worldSize ? 1: head[0] + 1; break;
 }
 if (getItemAt(...head).type === 'checkbox' && getItemAt(...head).checked) {
-  document.querySelector('h1').innerText = 'Game Over...';
+  document.querySelector('h1').innerText = 'Koniec gry! Twój wynik: ' + currentScore;
   document.querySelectorAll('input').forEach(input => input.disabled = true);
   playWave(head);
   clearInterval(moveInterval);

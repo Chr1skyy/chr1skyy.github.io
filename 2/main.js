@@ -42,9 +42,7 @@ function play() {
         score.textContent = result;
         hitPosition = null;
       }
-      if (square.id != hitPosition) {
-        missSound.play();
-      }
+      if (square.id != hitPosition) missSound.play();
     });
   });
   let timerId = setInterval(rndSquare, 750);

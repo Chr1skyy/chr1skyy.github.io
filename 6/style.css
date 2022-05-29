@@ -19,6 +19,8 @@ body {
 }
 
 .clock {
+  top: 50%;
+  transform: translateY(50%);
   display: none;
   position: relative;
   height: 200px;
@@ -64,4 +66,5 @@ body {
 
 .time {
   font-size: 60px;
+  margin-top: 120px;
 }

@@ -17,15 +17,9 @@ choice.forEach(choice => choice.addEventListener("click", (x) => {
 
 function compCoiceGen() {
   const rng = Math.floor(Math.random() * 3);
-  if (rng === 0) {
-    compChoice = emoji[0];
-  }
-  if (rng === 1) {
-    compChoice = emoji[1];
-  }
-  if (rng === 2) {
-    compChoice = emoji[2];
-  }
+  if (rng === 0) compChoice = emoji[0];
+  if (rng === 1) compChoice = emoji[1];
+  if (rng === 2) compChoice = emoji[2];
   comp.innerHTML = compChoice;
 }
 
